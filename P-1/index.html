@@ -7,10 +7,34 @@
     <title>Palindrome Tracker | Check Numbers Instantly</title>
     <link rel="stylesheet" href="style.css">
     <link rel="icon" href="Assets/Palindrome-tracker icon.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
 
-    <main class="main-content"></main>
+    <main class="main-content">
+        <section class="Content">
+            <div class="Hero-content">
+                <div class="title">
+                    <img src="Assets/Palindrome-tracker icon.png" alt="Icon" class="icon">
+                    <h1>Palindrome <span>Tracker</span></h1>
+                </div>
+                <div class="description">
+                    Check if your number is a palindrome<br>in just a click!
+                </div>
+            </div>
+            <div class="Tracker-input">
+                <label for="number-input">Enter a number</label>
+                <input type="text" id="number-input" placeholder="#   e.g. 12321">
+                <button class="Check-btn">Check Number</button>
+            </div>
+            <aside class="loading-animation"></aside>
+            <aside class="Successfull"></aside>
+            <aside class="Unsuccessfull"></aside>
+            <div class="tracker-description"></div>
+        </section>
+    </main>
     
 </body>
 </html>

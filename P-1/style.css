@@ -2,6 +2,7 @@ body {
   padding: 0px;
   margin: 0px;
   box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
 }
 
 :root {
@@ -38,9 +39,120 @@ body {
 }
 
 .main-content {
-    background: url(Assets/Palindrome-tracker\ bg.png);
-    background-size: contain;
-    width: 100%;
-    height: 100vh;
-    background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background: url(Assets/Palindrome-tracker\ bg.png);
+  background-size: contain;    
+  width: 100%;
+  height: 100vh;
+  background-repeat: no-repeat;
+}
+
+.title{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+
+  .icon{
+    width: 114px;
+    height: 114px;
+  }
+
+  h1{
+    font-size: 30px;
+    font-weight: 700;
+    color: #0F172A;
+
+    span{
+      color: #6366F1;
+    }
+  }
+}
+
+.description{
+  text-align: center;
+  font-size: 15px;
+  font-weight: 500;
+  color: #64748B;
+}
+
+.Tracker-input{
+  display: flex;
+  flex-direction:column; 
+  row-gap: 10px; 
+  background: linear-gradient(
+        145deg,
+        #FFFFFF 0%,
+        #F8FAFF 100%
+    );
+    border: 1px solid #E2E8F0;
+    border-radius: 18px;
+    padding: 28px;
+    box-shadow:
+        0 8px 24px rgba(99, 102, 241, 0.08),
+        0 2px 8px rgba(15, 23, 42, 0.04);
+
+  label{
+    font-size: 14px;
+    font-weight: 600;
+    color: #334155;
+    cursor: pointer;
+  }
+
+  input{
+    height: 52px;
+    padding: 0 16px;
+    font-size: 16px;
+    font-weight: 500;
+    color: #0F172A;
+    background: #F8FAFC;
+    border: 1px solid #E2E8F0;
+    border-radius: 12px;
+    outline: none;
+    transition: all 0.25s ease;
+  }
+
+  input:placeholder-shown{
+    color: #94A3B8;
+    font-size: 15px;
+    font-weight: 400;
+  }
+
+  input:focus{
+    border-color: #6366F1;
+    background: #FFFFFF;
+    box-shadow: 0 0 0 4px rgba(99, 102, 241, 0.12);
+    outline: none ;
+    border: none;
+  }
+
+  .Check-btn{
+    height: 52px;
+    border: none;
+    border-radius: 12px;
+    font-size: 15px;
+    font-weight: 600;
+    color: #FFFFFF;
+    margin-top: 7px;
+    background: linear-gradient(
+        135deg,
+        #6366F1 0%,
+        #3B82F6 100%
+    );
+    cursor: pointer;
+    box-shadow: 0 6px 16px rgba(99, 102, 241, 0.20);
+    transition: all 0.25s ease;
+  }
+
+  .Check-btn:hover{
+    background: linear-gradient(
+        135deg,
+        #4F46E5 0%,
+        #2563EB 100%
+    );
+    transform: translateY(-2px);
+    box-shadow: 0 8px 20px rgba(99, 102, 241, 0.28);
+  }
 }
