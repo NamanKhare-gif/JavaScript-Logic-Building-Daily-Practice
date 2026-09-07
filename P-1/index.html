@@ -1,40 +1,82 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Palindrome Tracker is a simple and interactive tool that checks whether a number reads the same forward and backward.">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="Palindrome Tracker is a simple and interactive tool that checks whether a number reads the same forward and backward."
+    />
     <title>Palindrome Tracker | Check Numbers Instantly</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="icon" href="Assets/Palindrome-tracker icon.png">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
-</head>
-<body>
-
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" href="Assets/Palindrome-tracker icon.png" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+  </head>
+  <body>
     <main class="main-content">
-        <section class="Content">
-            <div class="Hero-content">
-                <div class="title">
-                    <img src="Assets/Palindrome-tracker icon.png" alt="Icon" class="icon">
-                    <h1>Palindrome <span>Tracker</span></h1>
-                </div>
-                <div class="description">
-                    Check if your number is a palindrome<br>in just a click!
-                </div>
-            </div>
-            <div class="Tracker-input">
+      <section class="Content">
+        <div class="Hero-content">
+          <div class="title">
+            <img
+              src="Assets/Palindrome-tracker icon.png"
+              alt="Icon"
+              class="icon"
+            />
+            <h1>Palindrome <span>Tracker</span></h1>
+          </div>
+          <div class="description">
+            Check if your number is a palindrome<br />in just a click!
+          </div>
+        </div>
+        <div class="Tracker-input">
+            <div class="inputs">
                 <label for="number-input">Enter a number</label>
-                <input type="text" id="number-input" placeholder="#   e.g. 12321">
+                <input type="text" id="number-input" placeholder="#   e.g. 12321" />
                 <button class="Check-btn">Check Number</button>
+                <!-- Check Again Button -->
+                <button class="check-btn"><i class="fa-regular fa-circle-check"></i>Check Number</button>
             </div>
-            <aside class="loading-animation"></aside>
-            <aside class="Successfull"></aside>
-            <aside class="Unsuccessfull"></aside>
-            <div class="tracker-description"></div>
-        </section>
+            <aside class="Successfull">
+                <!-- Success Icon -->
+                <div class="success-icon">
+                <i class="fa-solid fa-check"></i>
+                </div>
+
+                <!-- Success Heading -->
+                <h2>Yes!</h2>
+
+                <!-- Number Result -->
+                <p class="success-number"><strong>12321</strong> is a palindrome</p>
+
+                <!-- Decorative Divider -->
+                <div class="success-divider">
+                <span></span>
+
+                <i class="fa-solid fa-link"></i>
+
+                <span></span>
+                </div>
+
+                <!-- Success Description -->
+                <p class="success-message">
+                It reads the same<br />
+                forward and backward!
+                </p>
+            </aside>
+        </div>
+        <aside class="loading-animation"></aside>
+        <aside class="Unsuccessfull"></aside>
+        <div class="tracker-description">
+          <div class="description-content">
+            <span class="description-line"></span>
+            <p>A palindrome reads the same<br />forward and backward!</p>
+            <span class="description-line"></span>
+          </div>
+        </div>
+      </section>
     </main>
-    
-</body>
+  </body>
 </html>
