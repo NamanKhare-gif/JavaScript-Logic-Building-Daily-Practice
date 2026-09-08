@@ -27,13 +27,31 @@ checkBtn1.addEventListener("click", () => {
   checking(value);
 });
 
-
 checkBtn2.addEventListener("click", () => {
-  location.reload();
+  const value = numInp.value.trim();
+  if (value === "") {
+    alert("Please enter a number.");
+    return;
+  }
+  if (!/^\d+$/.test(value)) {
+    showError(value);
+    return;
+  }
+  console.log(value);
+  checking(value);
 });
 
 checkBtn3.addEventListener("click", () => {
-  location.reload();
+    const value = numInp.value.trim();
+    if (value === "") {
+        alert("Please enter a number.");
+        return;
+    }
+    if (!/^\d+$/.test(value)) {
+        showError(value);
+        return;
+    }
+    checking(value);
 });
 
 function checking(value) {
