@@ -38,16 +38,44 @@ body {
   --icon-error: #f43f5e;
 }
 
+html, body {
+  height: 100%;
+}
+
+.main-content::before {
+  content: "";
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  z-index: -1;
+
+  background-image: url(Assets/Palindrome-tracker\ bg.png);
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+
 .main-content {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  min-height: 100vh;
+}
+
+.Content {
+  position: relative;
+  z-index: 1;
+  width: 100%;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  background: url(Assets/Palindrome-tracker\ bg.png);
-  background-size: contain;
-  width: 100%;
-  height: 100vh;
-  background-repeat: no-repeat;
+  padding: 25px 0 35px;
+  box-sizing: border-box;
 }
 
 .title {
@@ -75,7 +103,7 @@ body {
   text-align: center;
   font-size: 15px;
   font-weight: 500;
-  margin-top: 5px;
+  margin-top: 0px;
   color: #64748b;
 }
 
@@ -86,8 +114,9 @@ body {
 }
 
 .inputs {
+  width: 400px;
   display: flex;
-  row-gap: 10px;
+  row-gap: 17px;
   flex-direction: column;
   margin-top: 24px;
   background: linear-gradient(145deg, #ffffff 0%, #f8faff 100%);
@@ -99,7 +128,7 @@ body {
     0 2px 8px rgba(15, 23, 42, 0.04);
 
   label {
-    font-size: 14px;
+    font-size: 16px;
     font-weight: 600;
     color: #334155;
     cursor: pointer;
@@ -139,7 +168,7 @@ body {
     font-size: 15px;
     font-weight: 600;
     color: #ffffff;
-    margin-top: 7px;
+    margin-top: 5px;
     background: linear-gradient(135deg, #6366f1 0%, #3b82f6 100%);
     cursor: pointer;
     box-shadow: 0 6px 16px rgba(99, 102, 241, 0.2);
@@ -187,15 +216,19 @@ body {
 }
 
 .Successfull {
-  width: 100%;
+  display: none;
+  width: 36%;
   max-width: 500px;
-  padding: 28px 20px 26px;
+  padding: 15px 0px 15px;
   box-sizing: border-box;
   text-align: center;
   background: linear-gradient(145deg, #f0fdf9 0%, #ecfdf5 100%);
   border: 2px solid #6ee7b7;
   border-radius: 18px;
-  box-shadow: 0 8px 24px rgba(16, 185, 129, 0.08);
+  box-shadow:
+    0 8px 24px rgba(99, 102, 241, 0.08),
+    0 2px 8px rgba(15, 23, 42, 0.04);
+  margin-top: 15px;
 }
 
 .success-icon {
@@ -263,12 +296,13 @@ body {
   color: #3b5b8f;
 }
 
-.check-btn {
+.check-btn2 {
+  
   width: 100%;
   max-width: 500px;
   height: 52px;
   margin-top: 18px;
-  display: flex;
+  display: none; /*dislay flex when other link*/
   align-items: center;
   justify-content: center;
   gap: 12px;
@@ -286,17 +320,17 @@ body {
     background 0.25s ease;
 }
 
-.check-btn i {
+.check-btn2 i {
   font-size: 20px;
 }
 
-.check-btn:hover {
+.check-btn2:hover {
   background: linear-gradient(135deg, #059669 0%, #047857 100%);
   transform: translateY(-2px);
   box-shadow: 0 8px 20px rgba(16, 185, 129, 0.28);
 }
 
-.check-btn:active {
+.check-btn2:active {
   transform: translateY(0);
   box-shadow: 0 4px 10px rgba(16, 185, 129, 0.2);
 }
