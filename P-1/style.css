@@ -38,7 +38,8 @@ body {
   --icon-error: #f43f5e;
 }
 
-html, body {
+html,
+body {
   height: 100%;
 }
 
@@ -107,7 +108,7 @@ html, body {
   color: #64748b;
 }
 
-.Tracker-input{
+.Tracker-input {
   display: flex;
   justify-content: center;
   align-items: center;
@@ -174,7 +175,7 @@ html, body {
     box-shadow: 0 6px 16px rgba(99, 102, 241, 0.2);
     transition: all 0.25s ease;
 
-    i{
+    i {
       margin-right: 7px;
     }
   }
@@ -219,7 +220,7 @@ html, body {
   color: #3b5b8f;
 }
 
-.Successfull{
+.Successfull {
   display: none;
   width: 36%;
   max-width: 500px;
@@ -339,197 +340,521 @@ html, body {
 }
 
 .Unsuccessfull {
-    display: none;
-    width: 36%;
-    max-width: 500px;
-    padding: 15px 0px 15px;
-    box-sizing: border-box;
-    text-align: center;
+  display: none;
+  width: 36%;
+  max-width: 500px;
+  padding: 15px 0px 15px;
+  box-sizing: border-box;
+  text-align: center;
 
-    background: linear-gradient(
-        145deg,
-        #FFF7F9 0%,
-        #FFF1F4 100%
-    );
+  background: linear-gradient(145deg, #fff7f9 0%, #fff1f4 100%);
 
-    border: 2px solid #FDA4AF;
-    border-radius: 18px;
+  border: 2px solid #fda4af;
+  border-radius: 18px;
 
-    box-shadow:
-        0 8px 24px rgba(244, 63, 94, 0.08);
+  box-shadow: 0 8px 24px rgba(244, 63, 94, 0.08);
 
-      margin-top: 15px;
+  margin-top: 15px;
 }
-
 
 /* X Icon */
 
 .unsuccess-icon {
-    width: 88px;
-    height: 88px;
+  width: 88px;
+  height: 88px;
 
-    margin: 0 auto 12px;
+  margin: 0 auto 12px;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 
-    border-radius: 50%;
+  border-radius: 50%;
 
-    background: linear-gradient(
-        145deg,
-        #F43F5E 0%,
-        #E11D48 100%
-    );
+  background: linear-gradient(145deg, #f43f5e 0%, #e11d48 100%);
 
-    color: #FFFFFF;
+  color: #ffffff;
 
-    font-size: 40px;
+  font-size: 40px;
 
-    box-shadow:
-        0 8px 18px rgba(244, 63, 94, 0.25);
+  box-shadow: 0 8px 18px rgba(244, 63, 94, 0.25);
 }
-
 
 /* No Heading */
 
 .Unsuccessfull h2 {
-    margin: 0;
+  margin: 0;
 
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 
-    font-size: 40px;
+  font-size: 40px;
 
-    font-weight: 700;
+  font-weight: 700;
 
-    line-height: 1.2;
+  line-height: 1.2;
 
-    color: #BE123C;
+  color: #be123c;
 }
-
 
 /* Number */
 
 .unsuccess-number {
-    margin: 6px 0 0;
+  margin: 6px 0 0;
 
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 
-    font-size: 20px;
+  font-size: 20px;
 
-    font-weight: 500;
+  font-weight: 500;
 
-    line-height: 1.5;
+  line-height: 1.5;
 
-    color: #881337;
+  color: #881337;
 }
 
 .unsuccess-number strong {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 /* Divider */
 
 .unsuccess-divider {
-    width: 70%;
+  width: 70%;
 
-    margin: 22px auto 0;
+  margin: 22px auto 0;
 
-    display: flex;
+  display: flex;
 
-    align-items: center;
+  align-items: center;
 
-    justify-content: center;
+  justify-content: center;
 
-    gap: 20px;
+  gap: 20px;
 }
 
 .unsuccess-divider span {
-    flex: 1;
+  flex: 1;
 
-    height: 2px;
+  height: 2px;
 
-    background: #FDA4AF;
+  background: #fda4af;
 
-    border-radius: 10px;
+  border-radius: 10px;
 }
 
 .unsuccess-divider i {
-    font-size: 18px;
+  font-size: 18px;
 
-    color: #F43F5E;
+  color: #f43f5e;
 }
-
 
 /* Message */
 
 .unsuccess-message {
-    margin: 22px 0 0;
+  margin: 22px 0 0;
 
-    font-family: "Poppins", sans-serif;
+  font-family: "Poppins", sans-serif;
 
-    font-size: 15px;
+  font-size: 15px;
 
-    font-weight: 400;
+  font-weight: 400;
 
-    line-height: 1.6;
+  line-height: 1.6;
 
-    color: #3B5B8F;
-} 
+  color: #3b5b8f;
+}
 
 .check-btn3 {
-    width: 100%;
-    max-width: 500px;
-    height: 52px;
+  width: 100%;
+  max-width: 500px;
+  height: 52px;
 
-    margin-top: 5px;
+  margin-top: 5px;
 
-    display: none;
-    align-items: center;
-    justify-content: center;
-    gap: 12px;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
 
-    border: none;
-    border-radius: 14px;
-    font-size: 15px;
-    font-weight: 600;
+  border: none;
+  border-radius: 14px;
+  font-size: 15px;
+  font-weight: 600;
 
-    color: #FFFFFF;
+  color: #ffffff;
 
-    background: linear-gradient(
-        135deg,
-        #F43F5E 0%,
-        #E11D48 100%
-    );
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
 
-    box-shadow:
-        0 6px 16px rgba(244, 63, 94, 0.20);
+  box-shadow: 0 6px 16px rgba(244, 63, 94, 0.2);
 
-    cursor: pointer;
+  cursor: pointer;
 
-    transition:
-        transform 0.25s ease,
-        box-shadow 0.25s ease,
-        background 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
 }
 
 .check-btn3:hover {
-    background: linear-gradient(
-        135deg,
-        #E11D48 0%,
-        #BE123C 100%
-    );
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
 
-    transform: translateY(-2px);
+  transform: translateY(-2px);
 
-    box-shadow:
-        0 8px 20px rgba(244, 63, 94, 0.28);
+  box-shadow: 0 8px 20px rgba(244, 63, 94, 0.28);
 }
 
 .check-btn3:active {
-    transform: translateY(0);
+  transform: translateY(0);
 
-    box-shadow:
-        0 4px 10px rgba(244, 63, 94, 0.20);
+  box-shadow: 0 4px 10px rgba(244, 63, 94, 0.2);
+}
+
+/* ========================================
+   ERROR OVERLAY
+   ======================================== */
+
+.error-overlay {
+  position: fixed;
+  inset: 0;
+
+  width: 100%;
+  height: 100%;
+
+  display: none;
+
+  align-items: center;
+  justify-content: center;
+
+  padding: 20px;
+  box-sizing: border-box;
+
+  background: rgba(15, 23, 42, 0.35);
+
+  backdrop-filter: blur(7px);
+  -webkit-backdrop-filter: blur(7px);
+
+  z-index: 9999;
+}
+
+/* ========================================
+   ERROR MODAL
+   ======================================== */
+
+.error-modal {
+  position: relative;
+
+  width: 100%;
+  max-width: 520px;
+
+  padding: 42px 38px 34px;
+
+  box-sizing: border-box;
+
+  text-align: center;
+
+  background: #ffffff;
+
+  border: 2px solid #fda4af;
+
+  border-radius: 24px;
+
+  box-shadow: 0 25px 60px rgba(15, 23, 42, 0.2);
+
+  font-family: "Poppins", sans-serif;
+
+  overflow: hidden;
+}
+
+/* ========================================
+   CLOSE BUTTON
+   ======================================== */
+
+.error-close {
+  position: absolute;
+
+  top: 18px;
+  right: 20px;
+
+  width: 40px;
+  height: 40px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border: none;
+  border-radius: 50%;
+
+  background: transparent;
+
+  color: #64748b;
+
+  font-size: 22px;
+
+  cursor: pointer;
+
+  transition:
+    background 0.2s ease,
+    color 0.2s ease,
+    transform 0.2s ease;
+}
+
+.error-close:hover {
+  background: #fff1f2;
+
+  color: #e11d48;
+
+  transform: rotate(90deg);
+}
+
+/* ========================================
+   ERROR ICON
+   ======================================== */
+
+.error-icon {
+  width: 96px;
+  height: 96px;
+
+  margin: 0 auto 20px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  border-radius: 50%;
+
+  background: linear-gradient(145deg, #f43f5e 0%, #e11d48 100%);
+
+  color: #ffffff;
+
+  font-size: 46px;
+
+  box-shadow: 0 10px 25px rgba(244, 63, 94, 0.25);
+}
+
+/* ========================================
+   INVALID INPUT HEADING
+   ======================================== */
+
+.error-modal h2 {
+  margin: 0;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 34px;
+
+  font-weight: 700;
+
+  line-height: 1.2;
+
+  color: #be123c;
+}
+
+/* ========================================
+   "YOU ENTERED" TEXT
+   ======================================== */
+
+.error-label {
+  margin: 14px 0 10px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  color: #64748b;
+}
+
+/* ========================================
+   ENTERED VALUE
+   ======================================== */
+
+.entered-value {
+  min-width: 170px;
+
+  width: fit-content;
+
+  margin: 0 auto;
+
+  padding: 11px 22px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 7px;
+
+  box-sizing: border-box;
+
+  background: #fff5f7;
+
+  border: 2px solid #fda4af;
+
+  border-radius: 14px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 22px;
+
+  font-weight: 500;
+
+  letter-spacing: 2px;
+
+  color: #475569;
+}
+
+/* ========================================
+   WRONG CHARACTER
+   ======================================== */
+
+.entered-value strong {
+  color: #e11d48;
+
+  font-weight: 700;
+
+  text-decoration: underline;
+
+  text-decoration-thickness: 3px;
+
+  text-underline-offset: 5px;
+}
+
+/* ========================================
+   ERROR MESSAGE
+   ======================================== */
+
+.error-message {
+  margin: 18px 0 24px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 400;
+
+  line-height: 1.7;
+
+  color: #64748b;
+}
+
+.error-message strong {
+  color: #e11d48;
+
+  font-weight: 700;
+}
+
+/* ========================================
+   TRY AGAIN BUTTON
+   ======================================== */
+
+.error-btn {
+  width: 100%;
+  height: 54px;
+
+  display: flex;
+
+  align-items: center;
+  justify-content: center;
+
+  gap: 11px;
+
+  border: none;
+
+  border-radius: 14px;
+
+  font-family: "Poppins", sans-serif;
+
+  font-size: 16px;
+
+  font-weight: 600;
+
+  color: #ffffff;
+
+  background: linear-gradient(135deg, #f43f5e 0%, #e11d48 100%);
+
+  box-shadow: 0 7px 18px rgba(244, 63, 94, 0.22);
+
+  cursor: pointer;
+
+  transition:
+    transform 0.25s ease,
+    box-shadow 0.25s ease,
+    background 0.25s ease;
+}
+
+/* ========================================
+   TRY AGAIN ICON
+   ======================================== */
+
+.error-btn i {
+  font-size: 18px;
+}
+
+/* ========================================
+   BUTTON HOVER
+   ======================================== */
+
+.error-btn:hover {
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+
+  transform: translateY(-2px);
+
+  box-shadow: 0 10px 24px rgba(244, 63, 94, 0.3);
+}
+
+/* ========================================
+   BUTTON ACTIVE
+   ======================================== */
+
+.error-btn:active {
+  transform: translateY(0);
+
+  box-shadow: 0 4px 10px rgba(244, 63, 94, 0.2);
+}
+
+/* ========================================
+   MOBILE RESPONSIVE
+   ======================================== */
+
+@media (max-width: 500px) {
+  .error-modal {
+    max-width: 100%;
+
+    padding: 38px 22px 26px;
+
+    border-radius: 20px;
+  }
+
+  .error-icon {
+    width: 78px;
+    height: 78px;
+
+    font-size: 36px;
+  }
+
+  .error-modal h2 {
+    font-size: 28px;
+  }
+
+  .error-label {
+    font-size: 14px;
+  }
+
+  .entered-value {
+    font-size: 19px;
+
+    padding: 10px 18px;
+  }
+
+  .error-message {
+    font-size: 14px;
+  }
+
+  .error-btn {
+    height: 50px;
+
+    font-size: 15px;
+  }
 }

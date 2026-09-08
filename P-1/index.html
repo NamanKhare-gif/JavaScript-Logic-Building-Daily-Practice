@@ -89,7 +89,9 @@
           <!-- Success Heading -->
           <h2>Yes!</h2>
           <!-- Number Result -->
-          <p class="success-number"><strong class="number1">12321</strong> is a palindrome</p>
+          <p class="success-number">
+            <strong class="number1">12321</strong> is a palindrome
+          </p>
           <!-- Decorative Divider -->
           <div class="success-divider">
             <span></span>
@@ -110,6 +112,49 @@
         </div>
       </section>
     </main>
+    <!-- ERROR OVERLAY -->
+    <div class="error-overlay">
+      <div class="error-modal">
+        <!-- Close Button -->
+        <button class="error-close" type="button">
+          <i class="fa-solid fa-xmark"></i>
+        </button>
+
+        <!-- Error Icon -->
+        <div class="error-icon">
+          <i class="fa-solid fa-xmark"></i>
+        </div>
+
+        <!-- Heading -->
+        <h2>Invalid Input</h2>
+
+        <!-- Entered Text -->
+        <p class="error-label">You entered:</p>
+
+        <!-- User Input -->
+        <div class="entered-value">
+          <span>1</span>
+          <span>2</span>
+          <span>3</span>
+          <strong>a</strong>
+          <span>4</span>
+          <span>5</span>
+        </div>
+
+        <!-- Error Message -->
+        <p class="error-message">
+          <strong>a</strong> is not a number.
+          <br />
+          Please enter numbers only.
+        </p>
+
+        <!-- Try Again -->
+        <button class="error-btn" type="button">
+          <i class="fa-solid fa-rotate-right"></i>
+          Try Again
+        </button>
+      </div>
+    </div>
   </body>
   <script src="script.js"></script>
 </html>
