@@ -12,8 +12,14 @@
     <link rel="icon" href="Assets/Palindrome-tracker icon.png" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css">
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
+    />
   </head>
   <body>
     <main class="main-content">
@@ -32,30 +38,68 @@
           </div>
         </div>
         <div class="inputs">
-            <label for="number-input">Enter a number -</label>
-            <input type="text" id="number-input" inputmode="numeric" placeholder="#   e.g. 12321" />
-            <button class="Check-btn">Check Number</button>
-            <!-- Check Again Button -->
-            <button class="check-btn2"><i class="fa-regular fa-circle-check"></i>Check Number</button>
+          <label for="number-input">Enter a number -</label>
+          <input
+            type="text"
+            id="number-input"
+            inputmode="numeric"
+            placeholder="#   e.g. 12321"
+          />
+          <button class="Check-btn">
+            <i class="fa-solid fa-magnifying-glass"></i>Check Number
+          </button>
+          <!-- Check Again Button -->
+          <button class="check-btn2">
+            <i class="fa-regular fa-circle-check"></i>Check Number
+          </button>
+          <button class="check-btn3">
+            <i class="fa-solid fa-rotate-right"></i>Check Again
+          </button>
         </div>
         <aside class="loading-animation"></aside>
-        <aside class="Unsuccessfull"></aside>
-        <aside class="Successfull">                <!-- Success Icon -->
+        <aside class="Unsuccessfull">
+          <div class="unsuccess-icon">
+            <i class="fa-solid fa-xmark"></i>
+          </div>
+
+          <h2>No!</h2>
+
+          <p class="unsuccess-number">
+            <strong class="number2">12345</strong> is not a palindrome
+          </p>
+
+          <div class="unsuccess-divider">
+            <span></span>
+
+            <i class="fa-solid fa-link"></i>
+
+            <span></span>
+          </div>
+
+          <p class="unsuccess-message">
+            It reads differently<br />
+            forward and backward!
+          </p>
+        </aside>
+        <aside class="Successfull">
+          <!-- Success Icon -->
           <div class="success-icon">
             <i class="fa-solid fa-check"></i>
           </div>
           <!-- Success Heading -->
           <h2>Yes!</h2>
           <!-- Number Result -->
-          <p class="success-number"><strong>12321</strong> is a palindrome</p>
+          <p class="success-number"><strong class="number1">12321</strong> is a palindrome</p>
           <!-- Decorative Divider -->
           <div class="success-divider">
             <span></span>
-              <i class="fa-solid fa-link"></i>
-              <span></span>
+            <i class="fa-solid fa-link"></i>
+            <span></span>
           </div>
           <!-- Success Description -->
-          <p class="success-message">It reads the same<br />forward and backward!</p>
+          <p class="success-message">
+            It reads the same<br />forward and backward!
+          </p>
         </aside>
         <div class="tracker-description">
           <div class="description-content">
