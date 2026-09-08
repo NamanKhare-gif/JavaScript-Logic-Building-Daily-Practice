@@ -11,6 +11,7 @@ const enteredValue = document.querySelector(".entered-value");
 const errorMessage = document.querySelector(".error-message");
 const errorClose = document.querySelector(".error-close");
 const errorBtn = document.querySelector(".error-btn");
+const loadingAnimation = document.querySelector(".loading-animation");
 
 checkBtn1.addEventListener("click", () => {
   const value = numInp.value.trim();
@@ -57,6 +58,19 @@ checkBtn3.addEventListener("click", () => {
 function checking(value) {
   number1.textContent = value;
   number2.textContent = value;
+  
+    // Show loading animation
+    loadingAnimation.style.display = "flex";
+
+    // Wait for 5 seconds
+    setTimeout(() => {
+
+        // Hide loading animation
+        loadingAnimation.style.display = "none";
+
+        // Continue your palindrome checking code here
+
+    }, 1010);
   setTimeout(() => {
     const reversed = value.split("").reverse().join("");
     if (value === reversed) {
@@ -75,7 +89,7 @@ function checking(value) {
       UnsuccessDiv.style.display = "inline-block";
       checkBtn3.style.display = "flex";
     }
-  }, 1000);
+  },1000);
 }
 
 function showError(value) {
