@@ -215,7 +215,7 @@ html, body {
   color: #3b5b8f;
 }
 
-.Successfull {
+.Successfull{
   display: none;
   width: 36%;
   max-width: 500px;
@@ -297,11 +297,10 @@ html, body {
 }
 
 .check-btn2 {
-  
   width: 100%;
   max-width: 500px;
   height: 52px;
-  margin-top: 18px;
+  margin-top: 5px;
   display: none; /*dislay flex when other link*/
   align-items: center;
   justify-content: center;
