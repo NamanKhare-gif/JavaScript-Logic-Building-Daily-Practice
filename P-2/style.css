@@ -1,0 +1,99 @@
+:root {
+    /* ================================
+       BACKGROUND COLORS
+    ================================= */
+
+    --bg-primary: #080F19;
+    --bg-secondary: #0D1728;
+    --bg-card: #111F35;
+    --bg-card-light: #162744;
+
+
+    /* ================================
+       TEXT COLORS
+    ================================= */
+
+    --text-primary: #F8FAFC;
+    --text-secondary: #94A3B8;
+    --text-muted: #64748B;
+
+
+    /* ================================
+       ACCENT COLORS
+    ================================= */
+
+    --accent-purple: #8B5CF6;
+    --accent-blue: #3B82F6;
+    --accent-cyan: #22D3EE;
+
+
+    /* ================================
+       BUTTON COLORS
+    ================================= */
+
+    --btn-primary: #8B5CF6;
+    --btn-hover: #7C3AED;
+
+    --btn-secondary: #13243D;
+    --btn-secondary-hover: #1E3A5F;
+
+
+    /* ================================
+       BORDER COLORS
+    ================================= */
+
+    --border-primary: #243B5A;
+    --border-accent: #31558A;
+
+
+    /* ================================
+       GRADIENTS
+    ================================= */
+
+    --gradient-primary: linear-gradient(
+        135deg,
+        #8B5CF6,
+        #3B82F6,
+        #22D3EE
+    );
+
+    --gradient-button: linear-gradient(
+        135deg,
+        #8B5CF6,
+        #3B82F6,
+        #22D3EE
+    );
+
+
+    /* ================================
+       SHADOWS
+    ================================= */
+
+    --shadow-card: 0 20px 50px rgba(0, 0, 0, 0.35);
+
+    --shadow-glow: 0 0 35px rgba(139, 92, 246, 0.25);
+
+
+    /* ================================
+       BORDER RADIUS
+    ================================= */
+
+    --radius-small: 10px;
+    --radius-medium: 18px;
+    --radius-large: 28px;
+
+
+    /* ================================
+       TRANSITIONS
+    ================================= */
+
+    --transition-fast: 0.2s ease;
+    --transition-normal: 0.3s ease;
+}
+
+body {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
