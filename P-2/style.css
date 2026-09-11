@@ -208,7 +208,7 @@ h1 .accent{
   margin: 0;
 }
 
-.color-name-row{
+/* .color-name-row{
   display:flex;
   align-items:center;
   gap: 8px;
@@ -225,7 +225,7 @@ h1 .accent{
   transition: background 0.2s ease;
 }
 .color-name-row:hover{ background: rgba(255,255,255,0.15); }
-.color-name-row svg{ width: 16px; height: 16px; }
+.color-name-row svg{ width: 16px; height: 16px; } */
 
 .actions{
   display:flex;
