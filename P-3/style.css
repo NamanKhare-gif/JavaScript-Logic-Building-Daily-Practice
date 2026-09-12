@@ -349,6 +349,12 @@ h1, h2, h3 {
   border-radius: var(--radius-full);
 }
 
+.Main-img{
+    height: 560px;
+    width: 513px;
+    margin-left: 80px;
+}
+
 .badge--seller {
   position: absolute;
   top: var(--space-4);
@@ -576,6 +582,41 @@ h1, h2, h3 {
   width: 18px;
   border-radius: var(--radius-full);
   background-color: var(--color-brand);
+}
+
+.trust-badges {
+  display: flex;
+  gap: var(--space-5);
+  padding-top: var(--space-5);
+  margin-top: var(--space-3);
+  border-top: 1px solid var(--color-border);
+}
+
+.trust-badges__item {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--space-3);
+  flex: 1;
+}
+
+.trust-badges__item i {
+  width: 20px;
+  text-align: center;
+  margin-top: 3px;
+  color: var(--color-brand);
+  font-size: var(--fs-base);
+}
+
+.trust-badges__title {
+  font-size: var(--fs-sm);
+  font-weight: 600;
+  color: var(--color-text);
+}
+
+.trust-badges__desc {
+  font-size: var(--fs-xs);
+  color: var(--color-text-muted);
+  margin-top: 2px;
 }
 
 /* Product info */
