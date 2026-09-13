@@ -190,6 +190,16 @@ h1, h2, h3 {
   color: var(--color-text-subtle);
 }
 
+.searchbar:hover{
+  outline: 2px solid var(--color-brand);
+  outline-offset: 2px;
+}
+
+.searchbar__input:focus {
+  outline: none;
+  border: none;
+}
+
 .searchbar__btn {
   color: var(--color-text-muted);
   font-size: var(--fs-base);
